@@ -1,7 +1,9 @@
 import { useState } from 'react';
-import { useNavigate, Navigate, useLocation, BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { I18nextProvider } from 'react-i18next';
-import i18n from 'i18next';
+import i18n from './i18n'; // Ensure correct path
+
+// Import Components
 import Navbar from './Components/Navbar';
 import Dashboard from './Pages/Dashboard';
 import Marketplace from './Pages/FarmerMarketplace/Marketplace';
@@ -21,21 +23,15 @@ import FloatingChatButton from './Components/AiChatBot/FloatingChatButton';
 
 function AppContent() {
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const location = useLocation(); // Now this is inside the Router context
+  const location = useLocation(); // Works correctly inside BrowserRouter
 
-  const handleChatButtonClick = () => {
-    setIsChatOpen(!isChatOpen);
-  };
-
-  const handleCloseChat = () => {
-    setIsChatOpen(false);
-  };
+  const handleChatButtonClick = () => setIsChatOpen(!isChatOpen);
+  const handleCloseChat = () => setIsChatOpen(false);
 
   return (
     <>
-      {/* Conditionally render Navbar */}
-      {location.pathname !== '/' && <Navbar />}
 
+      <Navbar />
       <main>
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -43,7 +39,7 @@ function AppContent() {
 
           {/* Products & Orders Routes */}
           <Route path="/products" element={<Products_Layout />}>
-            <Route index element={<Navigate to="Crops" replace />} />
+            <Route index element={<Navigate to="/products/Crops" replace />} />
             <Route path="Crops" element={<Products />} />
             <Route path="Orders" element={<Orders />} />
             <Route path="details/:id" element={<ProductDetails />} />
@@ -51,7 +47,7 @@ function AppContent() {
 
           {/* Marketplace Routes */}
           <Route path="/marketplace" element={<Marketplace />}>
-            <Route index element={<Navigate to="farmers" replace />} />
+            {/* <Route index element={<Navigate to="/marketplace/farmers" replace />} /> */}
             <Route path="farmers" element={<FarmerDetails />} />
             <Route path="market" element={<MarketPrices />} />
             <Route path="news" element={<FarmingNews />} />
@@ -63,13 +59,11 @@ function AppContent() {
         </Routes>
       </main>
 
-      {/* Floating Chat Button and Modal */}
-      {location.pathname !== '/' && (
-        <div className="app">
-          <FloatingChatButton onClick={handleChatButtonClick} />
-          <ChatModal isOpen={isChatOpen} onClose={handleCloseChat} />
-        </div>
-      )}
+      <div className="app">
+        <FloatingChatButton onClick={handleChatButtonClick} />
+        <ChatModal isOpen={isChatOpen} onClose={handleCloseChat} />
+      </div>
+
     </>
   );
 }
@@ -78,7 +72,7 @@ function App() {
   return (
     <I18nextProvider i18n={i18n}>
       <BrowserRouter>
-        <AppContent /> {/* Render AppContent inside the Router context */}
+        <AppContent />
       </BrowserRouter>
     </I18nextProvider>
   );
