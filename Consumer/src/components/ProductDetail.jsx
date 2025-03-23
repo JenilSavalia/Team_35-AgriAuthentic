@@ -136,7 +136,9 @@ export default function ProductDetail({ product, onBack }) {
               </div>
               <div>
                 <h1 className='font-semibold text-xl'>Traceability and farmer details</h1>
-                <img src={Farmer1} alt="" width={250} className='mt-5 hover:shadow-lg rounded-2xl hover:scale-110 transition duration-300 cursor-pointer' />
+                <Link to="/shop/kisan/detail/1">
+                  <img src={Farmer1} alt="" width={250} className='mt-5 hover:shadow-lg rounded-2xl hover:scale-110 transition duration-300 cursor-pointer' />
+                </Link>
               </div>
             </div>
           </div>

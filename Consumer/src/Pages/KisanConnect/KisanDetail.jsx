@@ -194,9 +194,11 @@ const KisanDetail = () => {
             <NavbarMarket />
 
             <div className="min-h-screen bg-gradient-to-br from-green-50 to-yellow-50 flex flex-col items-center justify-center p-6 ">
-                <div className=''>
-                    <img src={TopRated} alt="" className='rounded-2xl' />
-                </div>
+                <Link to="/shop/kisan">
+                    <div className=''>
+                        <img src={TopRated} alt="" className='rounded-2xl' />
+                    </div>
+                </Link>
                 <div className="max-w-5xl w-full bg-white rounded-2xl shadow-xl overflow-hidden relative mt-2">
 
                     <div className="absolute top-0 left-0 w-24 h-24 bg-[url('https://images.unsplash.com/photo-1587334207407-deb137a955ba?w=150')] opacity-20 rounded-br-full"></div>
