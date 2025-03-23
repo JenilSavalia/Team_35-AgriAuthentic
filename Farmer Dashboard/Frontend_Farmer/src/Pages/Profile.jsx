@@ -13,7 +13,7 @@ function Profile() {
 
   useEffect(() => {
     const fetchProfileData = async () => {
-      const response = await axios.get(`https://agriauthenic-poc-backend.onrender.com/farmer/${id}`);
+      const response = await axios.get(`http://localhost:4009/farmer/${id}`);
       setUserProfileData(response.data.data);
     };
 

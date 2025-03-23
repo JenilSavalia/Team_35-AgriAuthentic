@@ -10,7 +10,7 @@ function ProductDetails() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`https://agriauthenic-poc-backend.onrender.com/product/${id}`);
+        const response = await axios.get(`http://localhost:4009/product/${id}`);
         setProduct(response.data.data);
       } catch (err) {
         console.error("Error fetching product details:", err);
@@ -53,13 +53,13 @@ function ProductDetails() {
               <span>{product.harvestDate}</span>
             </div>
           </div>
-          <div className="flex flex-wrap gap-2 mt-4">
+          {/* <div className="flex flex-wrap gap-2 mt-4">
             {product.tags.map((tag, index) => (
               <span key={index} className="bg-green-100 text-green-700 px-3 py-1 text-sm rounded-full">
                 {tag}
               </span>
             ))}
-          </div>
+          </div> */}
           <div className="flex items-center gap-2 bg-green-700 text-white w-max px-3 py-1 rounded-md text-sm mt-2">
             <BadgeCheck size={18} />
             Verified Product

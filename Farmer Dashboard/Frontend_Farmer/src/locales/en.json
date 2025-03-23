@@ -1,27 +1,24 @@
 {
-    "AI Dashboard": "AI Dashboard",
-    "Products & Orders": "Products & Orders",
-    "Marketplace": "Marketplace",
-    "Analytics": "Analytics",
-    "Profile": "Profile",
-    
-    "WelcomeMessage": "Welcome to AgriAuthentic HomePage",
-
-    "products": "Products",
-    "orders": "Orders",
-    "listNewProduct": "List New Product",
-    "addNewProduct": "Add New Product",
-    "productName": "Product Name",
-    "productDescription": "Product Description",
-    "price": "Price (₹)",
-    "stock": "Stock",
-    "harvestLocation": "Harvest Location",
-    "harvestDate": "Harvest Date",
-    "tags": "Tags (comma-separated)",
-    "imageLink": "Image URL",
-    "submit": "Submit",
-
-"profile": {
+  "AI Dashboard": "AI Dashboard",
+  "Products & Orders": "Products & Orders",
+  "Marketplace": "Marketplace",
+  "Analytics": "Analytics",
+  "Profile": "Profile",
+  "WelcomeMessage": "Welcome to AgriAuthentic HomePage",
+  "products": "Products",
+  "orders": "Orders",
+  "listNewProduct": "List New Product",
+  "addNewProduct": "Add New Product",
+  "productName": "Product Name",
+  "productDescription": "Product Description",
+  "price": "Price (₹)",
+  "stock": "Stock",
+  "harvestLocation": "Harvest Location",
+  "harvestDate": "Harvest Date",
+  "tags": "Tags (comma-separated)",
+  "imageLink": "Image URL",
+  "submit": "Submit",
+  "profile": {
     "heroTitle": "Farmer Profile",
     "proBadge": "PRO FARMER",
     "farmSize": "Total Farm Size",
@@ -41,7 +38,6 @@
     "membership": "Membership",
     "acres": "acres"
   },
-
   "analytics": {
     "dashboardTitle": "Farmer Analytics Dashboard",
     "timeFrame": {
@@ -64,45 +60,112 @@
       "humidity": "Humidity"
     }
   },
-
-  
-    "dashboard": {
-      "title": "FarmData",
-      "refresh": "Refresh",
-      "loading": "Loading farm data...",
-      "certificationProgress": "Certification Progress",
-      "certificationDetails": "Certification Details",
-      "sensorDataTimeline": "Sensor Data Timeline",
-      "lastUpdated": "Data refreshes automatically every 10 seconds • Last updated",
-      "status": {
-        "optimal": "Optimal",
-        "low": "Low",
-        "high": "High"
+  "dashboard": {
+    "title": "FarmData",
+    "refresh": "Refresh",
+    "loading": "Loading farm data...",
+    "certificationProgress": "Certification Progress",
+    "certificationDetails": "Certification Details",
+    "sensorDataTimeline": "Sensor Data Timeline",
+    "lastUpdated": "Data refreshes automatically every 10 seconds • Last updated",
+    "status": {
+      "optimal": "Optimal",
+      "low": "Low",
+      "high": "High"
+    },
+    "certification": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "fullOrganic": "Full Organic",
+      "continuePractices": "Continue implementing sustainable practices to achieve full certification.",
+      "congratulations": "Congratulations! You've achieved full organic certification."
+    },
+    "aiRecommendations": {
+      "title": "Smart Farm Assistant",
+      "allOptimal": "All systems optimal!",
+      "excellentPerformance": "Your farm is performing excellently."
+    },
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "toggleParameters": "Toggle parameters visibility by clicking on their names in the legend below the chart",
+    "min": "Min",
+    "max": "Max",
+    "optimalRange": "Optimal Range"
+  },
+  "title": "AI Market Price Prediction",
+  "selectCrop": "Select Your Crop",
+  "selectMarket": "Select Market",
+  "selectCropPlaceholder": "-- Select Crop --",
+  "selectMarketPlaceholder": "-- Select Market --",
+  "predictionsFor": "Predictions for",
+  "predictionFor": "Prediction for",
+  "market": "Market",
+  "perQuintal": "per quintal",
+  "predictedIn30Days": "Predicted in 30 days",
+  "bestTimeToSell": "Best time to sell",
+  "marketInsight": "Market Insight",
+  "noSelectionMessage": "Please select either a crop OR a market to see price predictions",
+  "selectCropOrMarket": "Select either a specific crop OR a market to see predictions",
+  "now": "Now",
+  "header": {
+    "title": "FarmFeed",
+    "date": "{date}",
+    "searchPlaceholder": "Search news..."
+  },
+  "filters": {
+    "all": "All News",
+    "climate": "Climate & Weather",
+    "trade": "Trade & Policy",
+    "technology": "Agricultural Tech"
+  },
+  "news": {
+    "todaysHighlight": "Today's Highlight",
+    "latestNews": "Latest Farming News",
+    "noNewsFound": "No news found",
+    "resetFilters": "Reset Filters",
+    "readMore": "Read More",
+    "showLess": "Show Less",
+    "visitSource": "Visit Source",
+    "keyDetails": "Key Details",
+    "source": "Source",
+    "author": "Author",
+    "published": "Published",
+    "category": "Category",
+    "generalAgriculture": "General Agriculture"
+  },
+  "footer": {
+    "title": "FarmFeed",
+    "tagline": "Your trusted source for agricultural news",
+    "copyright": "© {year} FarmFeed. All rights reserved.",
+    "updates": "Updates every 30 minutes with the latest farming news"
+  },
+  "marketplace": {
+    "farmersDetails": "Farmer's Details",
+    "marketPrices": "Market Prices",
+    "news": "News"
+  },
+  "farmerDetails": {
+    "header": {
+      "title": "Farmer's Marketplace",
+      "subtitle": "Connect with farmers & support sustainable agriculture"
+    },
+    "loading": "Loading marketplace data...",
+    "noFarmers": {
+      "title": "No Farmers Available",
+      "message": "We're expanding our network. Check back soon."
+    },
+    "card": {
+      "experience": "Experience",
+      "years": "years",
+      "tags": {
+        "organic": "Organic",
+        "sustainable": "Sustainable",
+        "local": "Local"
       },
-      "certification": {
-        "basic": "Basic",
-        "intermediate": "Intermediate",
-        "fullOrganic": "Full Organic",
-        "continuePractices": "Continue implementing sustainable practices to achieve full certification.",
-        "congratulations": "Congratulations! You've achieved full organic certification."
-      },
-      "aiRecommendations": {
-        "title": "Smart Farm Assistant",
-        "allOptimal": "All systems optimal!",
-        "excellentPerformance": "Your farm is performing excellently."
-      },
-      "weekly": "Weekly", 
-      "monthly": "Monthly",
-      "toggleParameters": "Toggle parameters visibility by clicking on their names in the legend below the chart", 
-      "min": "Min", 
-      "max": "Max", 
-      "optimalRange": "Optimal Range" 
+      "buttons": {
+        "details": "Details",
+        "contact": "Contact"
+      }
     }
-  
-
-
-  
-      
-      
   }
-  
+}

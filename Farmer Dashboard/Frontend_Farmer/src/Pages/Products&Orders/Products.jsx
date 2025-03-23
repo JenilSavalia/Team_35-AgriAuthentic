@@ -13,7 +13,7 @@ function Products() {
   useEffect(() => {
     const fetchCrops = async () => {
       try {
-        const response = await axios.get('https://agriauthenic-poc-backend.onrender.com/product');
+        const response = await axios.get('http://localhost:4009/product');
         console.log(response.data)
         setCrops_data(response.data.data);
         setloading(false)

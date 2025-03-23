@@ -1,47 +1,44 @@
 {
-    "AI Dashboard": "એઆઈ ડૅશબોર્ડ",
-    "Products & Orders": "ઉત્પાદનો અને ઓર્ડરો",
-    "Marketplace": "બજાર",
-    "Analytics": "વિશ્લેષણ",
-    "Profile": "પ્રોફાઇલ",
-
-    "WelcomeMessage": "એગ્રીઔથેન્ટિક હોમપેજ પર તમારું સ્વાગત છે",
-
-    "products": "ઉત્પાદનો",
-    "orders": "ઓર્ડર",
-    "listNewProduct": "નવું ઉત્પાદન યાદી કરો",
-    "addNewProduct": "નવું ઉત્પાદન ઉમેરો",
-    "productName": "ઉત્પાદનનું નામ",
-    "productDescription": "ઉત્પાદન વર્ણન",
-    "price": "કિંમત (₹)",
-    "stock": "સ્ટોક",
-    "harvestLocation": "ફસલનું સ્થાન",
-    "harvestDate": "ફસલની તારીખ",
-    "tags": "ટૅગ્સ (અલ્પવિરામથી અલગ)",
-    "imageLink": "છબી લિંક",
-    "submit": "સબમિટ કરો",
-
-    "profile": {
-        "heroTitle": "ખેડૂત પ્રોફાઇલ",
-        "proBadge": "પ્રો ખેડૂત",
-        "farmSize": "કુલ ખેતરનું કદ",
-        "activeFarms": "સક્રિય ખેતરો",
-        "primaryCrops": "મુખ્ય પાક",
-        "contactDetails": "સંપર્ક વિગતો",
-        "phone": "ફોન",
-        "email": "ઇમેઇલ",
-        "address": "સરનામું",
-        "farmDetails": "ખેતર વિગતો",
-        "farmLocation": "ખેતર સ્થાન",
-        "cultivation": "ખેતી",
-        "region": "પ્રદેશ",
-        "farmingOverview": "ખેતી અવલોકન",
-        "totalArea": "કુલ વિસ્તાર",
-        "mainCrop": "મુખ્ય પાક",
-        "membership": "સભ્યપદ",
-        "acres": "એકર"
-      },
-      "analytics": {
+  "AI Dashboard": "એઆઈ ડૅશબોર્ડ",
+  "Products & Orders": "ઉત્પાદનો અને ઓર્ડરો",
+  "Marketplace": "બજાર",
+  "Analytics": "વિશ્લેષણ",
+  "Profile": "પ્રોફાઇલ",
+  "WelcomeMessage": "એગ્રીઔથેન્ટિક હોમપેજ પર તમારું સ્વાગત છે",
+  "products": "ઉત્પાદનો",
+  "orders": "ઓર્ડર",
+  "listNewProduct": "નવું ઉત્પાદન યાદી કરો",
+  "addNewProduct": "નવું ઉત્પાદન ઉમેરો",
+  "productName": "ઉત્પાદનનું નામ",
+  "productDescription": "ઉત્પાદન વર્ણન",
+  "price": "કિંમત (₹)",
+  "stock": "સ્ટોક",
+  "harvestLocation": "ફસલનું સ્થાન",
+  "harvestDate": "ફસલની તારીખ",
+  "tags": "ટૅગ્સ (અલ્પવિરામથી અલગ)",
+  "imageLink": "છબી લિંક",
+  "submit": "સબમિટ કરો",
+  "profile": {
+    "heroTitle": "ખેડૂત પ્રોફાઇલ",
+    "proBadge": "પ્રો ખેડૂત",
+    "farmSize": "કુલ ખેતરનું કદ",
+    "activeFarms": "સક્રિય ખેતરો",
+    "primaryCrops": "મુખ્ય પાક",
+    "contactDetails": "સંપર્ક વિગતો",
+    "phone": "ફોન",
+    "email": "ઇમેઇલ",
+    "address": "સરનામું",
+    "farmDetails": "ખેતર વિગતો",
+    "farmLocation": "ખેતર સ્થાન",
+    "cultivation": "ખેતી",
+    "region": "પ્રદેશ",
+    "farmingOverview": "ખેતી અવલોકન",
+    "totalArea": "કુલ વિસ્તાર",
+    "mainCrop": "મુખ્ય પાક",
+    "membership": "સભ્યપદ",
+    "acres": "એકર"
+  },
+  "analytics": {
     "dashboardTitle": "ખેડૂત વિશ્લેષણ ડેશબોર્ડ",
     "timeFrame": {
       "daily": "દૈનિક",
@@ -88,13 +85,87 @@
       "allOptimal": "બધી સિસ્ટમ્સ ઈષ્ટતમ છે!",
       "excellentPerformance": "તમારું ફાર્મ ઉત્તમ પ્રદર્શન કરે છે."
     },
-    "weekly": "સાપ્તાહિક", 
-    "monthly": "માસિક", 
-    "toggleParameters": "લેજેન્ડમાં તેમના નામ પર ક્લિક કરીને પેરામીટર્સની દૃશ્યમાનતા ટોગલ કરો", 
-    "min": "ન્યૂનતમ", 
+    "weekly": "સાપ્તાહિક",
+    "monthly": "માસિક",
+    "toggleParameters": "લેજેન્ડમાં તેમના નામ પર ક્લિક કરીને પેરામીટર્સની દૃશ્યમાનતા ટોગલ કરો",
+    "min": "ન્યૂનતમ",
     "max": "મહત્તમ",
-    "optimalRange": "ઈષ્ટતમ શ્રેણી" 
+    "optimalRange": "ઈષ્ટતમ શ્રેણી"
+  },
+  "title": "એઆઈ માર્કેટ પ્રાઇસ પ્રિડિક્શન",
+  "selectCrop": "તમારી પાક પસંદ કરો",
+  "selectMarket": "માર્કેટ પસંદ કરો",
+  "selectCropPlaceholder": "-- પાક પસંદ કરો --",
+  "selectMarketPlaceholder": "-- માર્કેટ પસંદ કરો --",
+  "predictionsFor": "માટેની આગાહીઓ",
+  "predictionFor": "માટેની આગાહી",
+  "market": "માર્કેટ",
+  "perQuintal": "પ્રતિ ક્વિન્ટલ",
+  "predictedIn30Days": "30 દિવસમાં આગાહી",
+  "bestTimeToSell": "વેચવા માટે શ્રેષ્ઠ સમય",
+  "marketInsight": "માર્કેટ ઇનસાઇટ",
+  "noSelectionMessage": "કિંમતની આગાહી જોવા માટે કૃપા કરીને ક્યાં તો પાક અથવા માર્કેટ પસંદ કરો",
+  "selectCropOrMarket": "કિંમતની આગાહી જોવા માટે ક્યાં તો એક ચોક્કસ પાક અથવા બજાર પસંદ કરો",
+  "now": "હમણાં",
+  "header": {
+    "title": "ફાર્મફીડ",
+    "date": "{date}",
+    "searchPlaceholder": "સમાચાર શોધો..."
+  },
+  "filters": {
+    "all": "બધા સમાચાર",
+    "climate": "હવામાન અને આબોહવા",
+    "trade": "વ્યાપાર અને નીતિ",
+    "technology": "કૃષિ ટેકનોલોજી"
+  },
+  "news": {
+    "todaysHighlight": "આજની મુખ્ય ખબર",
+    "latestNews": "નવીનતમ કૃષિ સમાચાર",
+    "noNewsFound": "કોઈ સમાચાર મળ્યા નથી",
+    "resetFilters": "ફિલ્ટર રીસેટ કરો",
+    "readMore": "વધુ વાંચો",
+    "showLess": "ઓછું બતાવો",
+    "visitSource": "સ્ત્રોત પર જાઓ",
+    "keyDetails": "મુખ્ય વિગતો",
+    "source": "સ્ત્રોત",
+    "author": "લેખક",
+    "published": "પ્રકાશિત",
+    "category": "શ્રેણી",
+    "generalAgriculture": "સામાન્ય કૃષિ"
+  },
+  "footer": {
+    "title": "ફાર્મફીડ",
+    "tagline": "કૃષિ સમાચારનો તમારો વિશ્વસનીય સ્ત્રોત",
+    "copyright": "© {year} ફાર્મફીડ। બધા હક્કો અનામત.",
+    "updates": "નવીનતમ કૃષિ સમાચાર દર 30 મિનિટમાં અપડેટ"
+  },
+  "marketplace": {
+    "farmersDetails": "કૃષકોની વિગતો",
+    "marketPrices": "બજાર ભાવ",
+    "news": "સમાચાર"
+  },
+  "farmerDetails": {
+    "header": {
+      "title": "કૃષક બજાર",
+      "subtitle": "કૃષકો સાથે જોડાઓ અને ટકાઉ કૃષિને ટેકો આપો"
+    },
+    "loading": "બજાર ડેટા લોડ થાય છે...",
+    "noFarmers": {
+      "title": "કોઈ કૃષક ઉપલબ્ધ નથી",
+      "message": "અમે અમારું નેટવર્ક વિસ્તૃત કરી રહ્યા છીએ. ટૂંક સમયમાં ફરી તપાસો."
+    },
+    "card": {
+      "experience": "અનુભવ",
+      "years": "વર્ષ",
+      "tags": {
+        "organic": "ઑર્ગેનિક",
+        "sustainable": "ટકાઉ",
+        "local": "સ્થાનિક"
+      },
+      "buttons": {
+        "details": "વિગતો",
+        "contact": "સંપર્ક કરો"
+      }
+    }
   }
-
-  }
-  
+}

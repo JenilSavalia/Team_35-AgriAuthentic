@@ -11,12 +11,16 @@ function GoogleLogin() {
     };
 
     useEffect(() => {
+        console.log("Authentication Status:", isAuthenticated);
+        console.log("User Data:", user);
+
         const registerUser = async () => {
             if (isAuthenticated && user) {
                 try {
                     const token = await getAccessTokenSilently();
+                    console.log("Access Token:", token); // Log token
 
-                    localStorage.setItem("googleId",user.sub);
+                    localStorage.setItem("googleId", user.sub);
 
                     const userData = {
                         googleId: user.sub,
@@ -24,22 +28,33 @@ function GoogleLogin() {
                         imageLink: user.picture,
                     };
 
-                    const response = await axios.post('http://localhost:4009/farmer/register', userData);
+                    console.log("Sending Data to API:", userData);
+
+                    const response = await axios.post(
+                        'http://localhost:4009/farmer/register',
+                        userData,
+                        {
+                            headers: { Authorization: `Bearer ${token}` },
+                        }
+                    );
+
+                    console.log("API Response:", response.data);
+
                     localStorage.setItem('Token', token);
-                    if (response.profileSetup) {
-                        navigate('/dashboard')
-                    }
-                    else {
-                        navigate('/profile-setup')
+                    if (response.data.profileSetup) {
+                        navigate('/dashboard');
+                    } else {
+                        navigate('/profile-setup');
                     }
                 } catch (err) {
-                    console.error('Error registering user:', err);
+                    console.error('Error registering user:', err.response ? err.response.data : err.message);
                 }
             }
         };
 
         registerUser();
     }, [isAuthenticated, user, getAccessTokenSilently]);
+
 
     return (
         <div>

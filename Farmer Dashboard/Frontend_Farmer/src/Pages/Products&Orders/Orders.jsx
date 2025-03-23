@@ -15,7 +15,7 @@ function Orders() {
     const fetchOrders = async () => {
       try {
         const response = await axios.get(
-          `https://agriauthenic-poc-backend.onrender.com/order/farmer/${farmer_id}`
+          `http://localhost:4009/farmer/${farmer_id}`
         );
         setOrders(response.data.data);
         console.log(response.data.data);

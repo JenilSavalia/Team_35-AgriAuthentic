@@ -9,8 +9,9 @@ function FarmerDetails() {
   useEffect(() => {
     const fetchFarmers = async () => {
       try {
-        const response = await axios.get('https://agriauthenic-poc-backend.onrender.com/farmer');
+        const response = await axios.get('http://localhost:4009/farmer');
         setFarmers(response.data);
+        console.log(response.data)
       } catch (error) {
         console.error('Error fetching farmer data:', error);
       } finally {
