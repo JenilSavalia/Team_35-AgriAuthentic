@@ -11,7 +11,7 @@ const router = express.Router();
 router.get('/', getAllProducts);
 router.get('/:id', getProductById);
 router.get('/:id/verify', getVerificationDetails);
-router.post('/', createProduct); // Add this line
+router.post('/', createProduct); 
 router.get('/farmer/:farmerId', getProductsByFarmerId);
 
 
