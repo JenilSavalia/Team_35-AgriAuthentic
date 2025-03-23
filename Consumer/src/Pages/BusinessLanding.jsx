@@ -10,33 +10,42 @@ import NavbarBusiness from './Header/NavbarBusiness'
 import { Link } from "react-router-dom";
 import { UserPlus, Cpu, ShieldCheck, Award, ShoppingBag } from 'lucide-react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
-
+import step1 from '../assets/step1.jpg'
+import step2 from '../assets/step2.jpg'
+import step3 from '../assets/step3.jpg'
+import step4 from '../assets/step4.jpg'
+import step5 from '../assets/step5.jpg'
 
 const steps = [
     {
         icon: <UserPlus className="h-8 w-8 text-white" />,
         title: 'Sign Up',
-        description: 'Create your farmer profile on AgriAuthentic.'
+        description: 'Create your farmer profile on AgriAuthentic.',
+        image : step1
     },
     {
         icon: <Cpu className="h-8 w-8 text-white" />,
         title: 'Install IoT Sensors',
-        description: 'Deploy IoT sensors on your farm to monitor soil health and crop conditions.'
+        description: 'Deploy IoT sensors on your farm to monitor soil health and crop conditions.',
+        image : step2
     },
     {
         icon: <ShieldCheck className="h-8 w-8 text-white" />,
         title: 'AI Verification',
-        description: 'Our AI system verifies your farming practices in real-time.'
+        description: 'Our AI system verifies your farming practices in real-time.',
+        image : step3
     },
     {
         icon: <Award className="h-8 w-8 text-white" />,
         title: 'Get Certified',
-        description: 'Earn certification badges and access premium markets.'
+        description: 'Earn certification badges and access premium markets.',
+        image : step4
     },
     {
         icon: <ShoppingBag className="h-8 w-8 text-white" />,
         title: 'Sell Directly',
-        description: 'List your products on our platform and connect with conscious consumers.'
+        description: 'List your products on our platform and connect with conscious consumers.',
+        image : step5
     }
 ];
 
@@ -129,7 +138,7 @@ const BusinessLanding = () => {
                                         <div className="relative">
                                             {/* Popup image */}
                                             <img
-                                                src={`https://placehold.co/900x1100`}
+                                                src={step.image}
                                                 alt={`${step.title} illustration`}
                                                 className="w-full h-fit object-cover rounded-md mb-3"
                                             />
@@ -194,11 +203,6 @@ const BusinessLanding = () => {
                         ))}
                     </div>
 
-                    <div className="text-center mt-12">
-                        <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition duration-300">
-                            Contact Us
-                        </button>
-                    </div>
                 </div>
             </section>
         </>
