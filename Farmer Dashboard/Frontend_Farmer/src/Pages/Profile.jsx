@@ -1,212 +1,221 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from "react-i18next"; // Import useTranslation
+import {
+  MapPin, Phone, Mail, Wheat, Map, Building2, Globe, Crown, Tractor, Sprout, Car, Navigation
+} from 'lucide-react';
+import axios from 'axios';
 
-function FarmerProfile() {
-  const [farmer, setFarmer] = useState({
-    farmerName: "",
-    farmerEmail: "",
-    farmerPhone: "",
-    farmAddress: { address: "", city: "", state: "", zipcode: "", country: "" },
-    farmerAddress: { address: "", city: "", state: "", zipcode: "", country: "" },
-    farmsSize: [],
-    totalFarms: "",
-    primaryCrops: [],
-    profileSetup: false
-  });
+function Profile() {
+  const { t } = useTranslation(); // Use the t function
+  const [userProfileData, setUserProfileData] = useState({});
 
-  const [loading, setLoading] = useState(true);
-  const [saving, setSaving] = useState(false);
+  const id = localStorage.getItem('googleId');
 
   useEffect(() => {
-    const fetchFarmerData = async () => {
-      try {
-        const response = await axios.get("https://agriauthenic-poc-backend.onrender.com/farmer/123"); // Sample ID
-        setFarmer(response.data);
-      } catch (error) {
-        console.error("Error fetching farmer data:", error);
-      } finally {
-        setLoading(false);
-      }
+    const fetchProfileData = async () => {
+      const response = await axios.get(`https://agriauthenic-poc-backend.onrender.com/farmer/${id}`);
+      setUserProfileData(response.data.data);
     };
 
-    fetchFarmerData();
-  }, []);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFarmer((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleNestedChange = (e, parent) => {
-    const { name, value } = e.target;
-    setFarmer((prev) => ({
-      ...prev,
-      [parent]: { ...prev[parent], [name]: value }
-    }));
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSaving(true);
-    try {
-      await axios.put("https://agriauthenic-poc-backend.onrender.com/farmer/update", farmer);
-      alert("Profile updated successfully!");
-    } catch (error) {
-      console.error("Error updating profile:", error);
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  if (loading) {
-    return (
-      <div className="flex justify-center items-center h-screen bg-green-50">
-        <div className="p-6 rounded-lg bg-white shadow-lg">
-          <div className="flex flex-col items-center">
-            <div className="w-12 h-12 border-t-4 border-green-500 border-solid rounded-full animate-spin"></div>
-            <span className="mt-4 text-base font-medium text-green-700">Loading profile data...</span>
-          </div>
-        </div>
-      </div>
-    );
-  }
+    fetchProfileData();
+  }, [id]);
 
   return (
-    <div className="min-h-screen bg-green-50 py-10 px-4">
-      <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8">
-        <h2 className="text-2xl font-semibold text-green-700 mb-6">Farmer Profile Settings</h2>
-        <form onSubmit={handleSubmit} className="space-y-5">
-          {/* Farmer Name */}
-          <div>
-            <label className="block text-green-700 font-medium">Farmer Name</label>
-            <input
-              type="text"
-              name="farmerName"
-              value={farmer.farmerName}
-              onChange={handleChange}
-              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            />
-          </div>
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50">
+      {/* Hero Banner */}
+      <div className="relative h-64 bg-gradient-to-r from-green-600 to-emerald-700 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <img
+            src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+            alt="Farm background"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent" />
+      </div>
 
-          {/* Farmer Email */}
-          <div>
-            <label className="block text-green-700 font-medium">Email</label>
-            <input
-              type="email"
-              name="farmerEmail"
-              value={farmer.farmerEmail}
-              onChange={handleChange}
-              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            />
-          </div>
+      {/* Profile Section */}
+      <div className="relative px-4 sm:px-6 lg:px-8 -mt-32 max-w-7xl mx-auto">
+        <div className="relative">
+          {/* Profile Header */}
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="sm:flex sm:items-center sm:justify-between p-8">
+              <div className="sm:flex sm:space-x-8 items-center">
+                <div className="relative mb-4 sm:mb-0">
+                  <img
+                    src={userProfileData.imageLink}
+                    alt="Profile"
+                    className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"
+                  />
+                  {/* Pro Badge */}
+                  <div className="absolute -right-2 -top-2 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full p-2 shadow-lg">
+                    <Crown className="w-5 h-5 text-white" />
+                  </div>
+                </div>
+                <div>
+                  <div className="flex items-center space-x-4">
+                    <h1 className="text-3xl font-bold text-gray-900">{userProfileData.farmerName}</h1>
+                    <span className="px-3 py-1 rounded-full text-sm font-semibold bg-yellow-100 text-yellow-800">
+                      {userProfileData.subscriptionModel} {t('profile.proBadge')}
+                    </span>
+                  </div>
+                  <div className="mt-2 flex items-center gap-1.5 text-gray-600">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    <span>{userProfileData?.farmerAddress?.address}</span>
+                    <span>{userProfileData?.farmerAddress?.city}</span>
+                    <span>{userProfileData?.farmerAddress?.state}</span>
+                    <span>{userProfileData?.farmerAddress?.country}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          {/* Farmer Phone */}
-          <div>
-            <label className="block text-green-700 font-medium">Phone</label>
-            <input
-              type="tel"
-              name="farmerPhone"
-              value={farmer.farmerPhone}
-              onChange={handleChange}
-              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              required
-            />
-          </div>
-
-          {/* Farm Address */}
-          <div>
-            <label className="block text-green-700 font-medium">Farm Address</label>
-            <input
-              type="text"
-              name="address"
-              value={farmer.farmAddress.address}
-              onChange={(e) => handleNestedChange(e, "farmAddress")}
-              placeholder="Street Address"
-              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <div className="grid grid-cols-3 gap-2 mt-2">
-              <input
-                type="text"
-                name="city"
-                value={farmer.farmAddress.city}
-                onChange={(e) => handleNestedChange(e, "farmAddress")}
-                placeholder="City"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-              <input
-                type="text"
-                name="state"
-                value={farmer.farmAddress.state}
-                onChange={(e) => handleNestedChange(e, "farmAddress")}
-                placeholder="State"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-              <input
-                type="text"
-                name="zipcode"
-                value={farmer.farmAddress.zipcode}
-                onChange={(e) => handleNestedChange(e, "farmAddress")}
-                placeholder="Zip Code"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
+            {/* Stats Overview */}
+            <div className="border-t border-gray-100">
+              <dl className="grid grid-cols-1 sm:grid-cols-3">
+                <div className="px-6 py-4 sm:border-r border-gray-100">
+                  <dt className="text-sm font-medium text-gray-500">{t('profile.farmSize')}</dt>
+                  <dd className="mt-1 text-2xl font-semibold text-green-600">{userProfileData.farmSizes} {t('profile.acres')}</dd>
+                </div>
+                <div className="px-6 py-4 sm:border-r border-gray-100">
+                  <dt className="text-sm font-medium text-gray-500">{t('profile.activeFarms')}</dt>
+                  <dd className="mt-1 text-2xl font-semibold text-green-600">1</dd>
+                </div>
+                <div className="px-6 py-4">
+                  <dt className="text-sm font-medium text-gray-500">{t('profile.primaryCrops')}</dt>
+                  <dd className="mt-1 text-2xl font-semibold text-green-600">Wheat</dd>
+                </div>
+              </dl>
             </div>
           </div>
 
-          {/* Farmer Address */}
-          <div>
-            <label className="block text-green-700 font-medium">Farmer Address</label>
-            <input
-              type="text"
-              name="address"
-              value={farmer.farmerAddress.address}
-              onChange={(e) => handleNestedChange(e, "farmerAddress")}
-              placeholder="Street Address"
-              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <div className="grid grid-cols-3 gap-2 mt-2">
-              <input
-                type="text"
-                name="city"
-                value={farmer.farmerAddress.city}
-                onChange={(e) => handleNestedChange(e, "farmerAddress")}
-                placeholder="City"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-              <input
-                type="text"
-                name="state"
-                value={farmer.farmerAddress.state}
-                onChange={(e) => handleNestedChange(e, "farmerAddress")}
-                placeholder="State"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
-              <input
-                type="text"
-                name="zipcode"
-                value={farmer.farmerAddress.zipcode}
-                onChange={(e) => handleNestedChange(e, "farmerAddress")}
-                placeholder="Zip Code"
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-              />
+          {/* Detailed Information */}
+          <div className="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            {/* Contact Information */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div className="p-6">
+                <div className="flex items-center">
+                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <Building2 className="w-5 h-5 text-green-600" />
+                  </div>
+                  <h2 className="ml-4 text-xl font-semibold text-gray-900">{t('profile.contactDetails')}</h2>
+                </div>
+                <div className="mt-6 space-y-4">
+                  <div className="flex items-start">
+                    <Phone className="w-5 h-5 text-gray-400 mt-1" />
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-gray-900">{t('profile.phone')}</p>
+                      <p className="text-sm text-gray-600">+91 7894561233</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Mail className="w-5 h-5 text-gray-400 mt-1" />
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-gray-900">{t('profile.email')}</p>
+                      <p className="text-sm text-gray-600">jatan.codinggita@gmail.com</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <MapPin className="w-5 h-5 text-gray-400 mt-1" />
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-gray-900">{t('profile.address')}</p>
+                      <p className="text-sm text-gray-600">
+                        d 304, Gandhi, Gujarat, 385693, India
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Farm Information */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div className="p-6">
+                <div className="flex items-center">
+                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <Car className="w-5 h-5 text-green-600" />
+                  </div>
+                  <h2 className="ml-4 text-xl font-semibold text-gray-900">{t('profile.farmDetails')}</h2>
+                </div>
+                <div className="mt-6 space-y-4">
+                  <div className="flex items-start">
+                    <Tractor className="w-5 h-5 text-gray-400 mt-1" />
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-gray-900">{t('profile.farmLocation')}</p>
+                      <p className="text-sm text-gray-600">
+                        11/4, Gandhi, Gujarat, 385693, India
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Sprout className="w-5 h-5 text-gray-400 mt-1" />
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-gray-900">{t('profile.cultivation')}</p>
+                      <p className="text-sm text-gray-600">
+                        Specializing in wheat farming across 150 acres
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <Globe className="w-5 h-5 text-gray-400 mt-1" />
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-gray-900">{t('profile.region')}</p>
+                      <p className="text-sm text-gray-600">India</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Submit Button */}
-          <div className="flex justify-end">
-            <button
-              type="submit"
-              className="px-6 py-2 bg-green-700 text-white font-medium rounded-lg hover:bg-green-800 transition"
-              disabled={saving}
-            >
-              {saving ? "Saving..." : "Update Profile"}
-            </button>
+          {/* Additional Stats */}
+          <div className="mt-8 bg-white rounded-xl shadow-md overflow-hidden">
+            <div className="p-6">
+              <h2 className="text-xl font-semibold text-gray-900 mb-6">{t('profile.farmingOverview')}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-green-50 rounded-lg p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-medium text-gray-600">{t('profile.totalArea')}</p>
+                      <p className="mt-2 text-3xl font-bold text-green-700">150</p>
+                      <p className="text-sm text-gray-500">{t('profile.acres')}</p>
+                    </div>
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                      <Map className="w-6 h-6 text-green-600" />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-green-50 rounded-lg p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-medium text-gray-600">{t('profile.mainCrop')}</p>
+                      <p className="mt-2 text-3xl font-bold text-green-700">Wheat</p>
+                      <p className="text-sm text-gray-500">cultivation</p>
+                    </div>
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                      <Wheat className="w-6 h-6 text-green-600" />
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-green-50 rounded-lg p-6">
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <p className="text-sm font-medium text-gray-600">{t('profile.membership')}</p>
+                      <p className="mt-2 text-3xl font-bold text-green-700">PRO</p>
+                      <p className="text-sm text-gray-500">status</p>
+                    </div>
+                    <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                      <Crown className="w-6 h-6 text-green-600" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
 }
 
-export default FarmerProfile;
+export default Profile;

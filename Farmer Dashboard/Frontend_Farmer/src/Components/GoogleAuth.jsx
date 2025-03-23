@@ -15,6 +15,9 @@ function GoogleLogin() {
             if (isAuthenticated && user) {
                 try {
                     const token = await getAccessTokenSilently();
+
+                    localStorage.setItem("googleId",user.sub);
+
                     const userData = {
                         googleId: user.sub,
                         farmerEmail: user.email,
@@ -23,7 +26,7 @@ function GoogleLogin() {
 
                     const response = await axios.post('http://localhost:4009/farmer/register', userData);
                     localStorage.setItem('Token', token);
-                    if(response.profileSetup){
+                    if (response.profileSetup) {
                         navigate('/dashboard')
                     }
                     else {

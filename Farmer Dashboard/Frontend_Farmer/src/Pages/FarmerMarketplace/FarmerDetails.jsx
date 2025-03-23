@@ -10,7 +10,7 @@ function FarmerDetails() {
     const fetchFarmers = async () => {
       try {
         const response = await axios.get('https://agriauthenic-poc-backend.onrender.com/farmer');
-        setFarmers(response.data.data);
+        setFarmers(response.data);
       } catch (error) {
         console.error('Error fetching farmer data:', error);
       } finally {

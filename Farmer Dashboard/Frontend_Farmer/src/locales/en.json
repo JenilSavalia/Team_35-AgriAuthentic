@@ -1,0 +1,108 @@
+{
+    "AI Dashboard": "AI Dashboard",
+    "Products & Orders": "Products & Orders",
+    "Marketplace": "Marketplace",
+    "Analytics": "Analytics",
+    "Profile": "Profile",
+    
+    "WelcomeMessage": "Welcome to AgriAuthentic HomePage",
+
+    "products": "Products",
+    "orders": "Orders",
+    "listNewProduct": "List New Product",
+    "addNewProduct": "Add New Product",
+    "productName": "Product Name",
+    "productDescription": "Product Description",
+    "price": "Price (₹)",
+    "stock": "Stock",
+    "harvestLocation": "Harvest Location",
+    "harvestDate": "Harvest Date",
+    "tags": "Tags (comma-separated)",
+    "imageLink": "Image URL",
+    "submit": "Submit",
+
+"profile": {
+    "heroTitle": "Farmer Profile",
+    "proBadge": "PRO FARMER",
+    "farmSize": "Total Farm Size",
+    "activeFarms": "Active Farms",
+    "primaryCrops": "Primary Crops",
+    "contactDetails": "Contact Details",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "farmDetails": "Farm Details",
+    "farmLocation": "Farm Location",
+    "cultivation": "Cultivation",
+    "region": "Region",
+    "farmingOverview": "Farming Overview",
+    "totalArea": "Total Area",
+    "mainCrop": "Main Crop",
+    "membership": "Membership",
+    "acres": "acres"
+  },
+
+  "analytics": {
+    "dashboardTitle": "Farmer Analytics Dashboard",
+    "timeFrame": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly",
+      "yearly": "Yearly"
+    },
+    "metrics": {
+      "totalEarnings": "Total Earnings",
+      "pendingPayouts": "Pending Payouts",
+      "cropYieldGrowth": "Crop Yield Growth",
+      "totalOrders": "Total Orders"
+    },
+    "revenueOverview": "Revenue Overview",
+    "weatherForecast": "Weather Forecast",
+    "cropGrowthTrends": "Crop Growth Trends",
+    "weather": {
+      "temperature": "Temperature",
+      "humidity": "Humidity"
+    }
+  },
+
+  
+    "dashboard": {
+      "title": "FarmData",
+      "refresh": "Refresh",
+      "loading": "Loading farm data...",
+      "certificationProgress": "Certification Progress",
+      "certificationDetails": "Certification Details",
+      "sensorDataTimeline": "Sensor Data Timeline",
+      "lastUpdated": "Data refreshes automatically every 10 seconds • Last updated",
+      "status": {
+        "optimal": "Optimal",
+        "low": "Low",
+        "high": "High"
+      },
+      "certification": {
+        "basic": "Basic",
+        "intermediate": "Intermediate",
+        "fullOrganic": "Full Organic",
+        "continuePractices": "Continue implementing sustainable practices to achieve full certification.",
+        "congratulations": "Congratulations! You've achieved full organic certification."
+      },
+      "aiRecommendations": {
+        "title": "Smart Farm Assistant",
+        "allOptimal": "All systems optimal!",
+        "excellentPerformance": "Your farm is performing excellently."
+      },
+      "weekly": "Weekly", 
+      "monthly": "Monthly",
+      "toggleParameters": "Toggle parameters visibility by clicking on their names in the legend below the chart", 
+      "min": "Min", 
+      "max": "Max", 
+      "optimalRange": "Optimal Range" 
+    }
+  
+
+
+  
+      
+      
+  }
+  

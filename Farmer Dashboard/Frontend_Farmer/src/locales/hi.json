@@ -1,0 +1,115 @@
+{
+    "AI Dashboard": "एआई डैशबोर्ड",
+    "Products & Orders": "उत्पाद और आदेश",
+    "Marketplace": "बाजार",
+    "Analytics": "विश्लेषिकी",
+    "Profile": "प्रोफ़ाइल",
+    "WelcomeMessage": "एग्रीऑथेंटिक होमपेज में आपका स्वागत है",
+    "products": "उत्पाद",
+    "orders": "आदेश",
+    "listNewProduct": "नया उत्पाद सूचीबद्ध करें",
+    "addNewProduct": "नया उत्पाद जोड़ें",
+    "productName": "उत्पाद का नाम",
+    "productDescription": "उत्पाद विवरण",
+    "price": "मूल्य (₹)",
+    "stock": "स्टॉक",
+    "harvestLocation": "फसल स्थान",
+    "harvestDate": "फसल तिथि",
+    "tags": "टैग (अल्पविराम से अलग)",
+    "imageLink": "छवि लिंक",
+    "submit": "जमा करें",
+    "heroTitle": "किसान प्रोफ़ाइल",
+    "proBadge": "प्रो किसान",
+    "farmSize": "कुल खेत का आकार",
+    "activeFarms": "सक्रिय खेत",
+    "primaryCrops": "मुख्य फसलें",
+    "contactDetails": "संपर्क विवरण",
+    "phone": "फ़ोन",
+    "email": "ईमेल",
+    "address": "पता",
+    "farmDetails": "खेत विवरण",
+    "farmLocation": "खेत स्थान",
+    "cultivation": "खेती",
+    "region": "क्षेत्र",
+    "farmingOverview": "खेती अवलोकन",
+    "totalArea": "कुल क्षेत्र",
+    "mainCrop": "मुख्य फसल",
+    "membership": "सदस्यता",
+    "acres": "एकड़",
+
+    "profile": {
+        "heroTitle": "किसान प्रोफ़ाइल",
+        "proBadge": "प्रो किसान",
+        "farmSize": "कुल खेत का आकार",
+        "activeFarms": "सक्रिय खेत",
+        "primaryCrops": "मुख्य फसलें",
+        "contactDetails": "संपर्क विवरण",
+        "phone": "फ़ोन",
+        "email": "ईमेल",
+        "address": "पता",
+        "farmDetails": "खेत विवरण",
+        "farmLocation": "खेत स्थान",
+        "cultivation": "खेती",
+        "region": "क्षेत्र",
+        "farmingOverview": "खेती अवलोकन",
+        "totalArea": "कुल क्षेत्र",
+        "mainCrop": "मुख्य फसल",
+        "membership": "सदस्यता",
+        "acres": "एकड़"
+      },
+      "analytics": {
+        "dashboardTitle": "किसान विश्लेषण डैशबोर्ड",
+        "timeFrame": {
+          "daily": "दैनिक",
+          "weekly": "साप्ताहिक",
+          "monthly": "मासिक",
+          "yearly": "वार्षिक"
+        },
+        "metrics": {
+          "totalEarnings": "कुल आय",
+          "pendingPayouts": "लंबित भुगतान",
+          "cropYieldGrowth": "फसल उपज वृद्धि",
+          "totalOrders": "कुल आदेश"
+        },
+        "revenueOverview": "राजस्व अवलोकन",
+        "weatherForecast": "मौसम पूर्वानुमान",
+        "cropGrowthTrends": "फसल वृद्धि रुझान",
+        "weather": {
+          "temperature": "तापमान",
+          "humidity": "नमी"
+        }
+      },
+
+      "dashboard": {
+        "title": "फार्मडेटा",
+        "refresh": "ताज़ा करें",
+        "loading": "फार्म डेटा लोड हो रहा है...",
+        "certificationProgress": "प्रमाणीकरण प्रगति",
+        "certificationDetails": "प्रमाणीकरण विवरण",
+        "sensorDataTimeline": "सेंसर डेटा समयरेखा",
+        "lastUpdated": "डेटा हर 10 सेकंड में स्वचालित रूप से ताज़ा होता है • अंतिम अपडेट",
+        "status": {
+          "optimal": "इष्टतम",
+          "low": "कम",
+          "high": "उच्च"
+        },
+        "certification": {
+          "basic": "बुनियादी",
+          "intermediate": "मध्यवर्ती",
+          "fullOrganic": "पूर्ण जैविक",
+          "continuePractices": "पूर्ण प्रमाणीकरण प्राप्त करने के लिए सतत प्रथाओं को लागू करना जारी रखें।",
+          "congratulations": "बधाई हो! आपने पूर्ण जैविक प्रमाणीकरण प्राप्त कर लिया है।"
+        },
+        "aiRecommendations": {
+          "title": "स्मार्ट फार्म सहायक",
+          "allOptimal": "सभी प्रणालियाँ इष्टतम हैं!",
+          "excellentPerformance": "आपका फार्म उत्कृष्ट प्रदर्शन कर रहा है।"
+        },
+        "weekly": "साप्ताहिक", 
+        "monthly": "मासिक",
+        "toggleParameters": "लेजेंड में उनके नाम पर क्लिक करके पैरामीटर्स की दृश्यता टॉगल करें", 
+        "min": "न्यूनतम", 
+        "max": "अधिकतम", 
+        "optimalRange": "इष्टतम सीमा" 
+      }
+}

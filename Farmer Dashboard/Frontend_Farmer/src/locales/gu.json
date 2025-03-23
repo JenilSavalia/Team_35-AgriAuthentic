@@ -1,0 +1,100 @@
+{
+    "AI Dashboard": "એઆઈ ડૅશબોર્ડ",
+    "Products & Orders": "ઉત્પાદનો અને ઓર્ડરો",
+    "Marketplace": "બજાર",
+    "Analytics": "વિશ્લેષણ",
+    "Profile": "પ્રોફાઇલ",
+
+    "WelcomeMessage": "એગ્રીઔથેન્ટિક હોમપેજ પર તમારું સ્વાગત છે",
+
+    "products": "ઉત્પાદનો",
+    "orders": "ઓર્ડર",
+    "listNewProduct": "નવું ઉત્પાદન યાદી કરો",
+    "addNewProduct": "નવું ઉત્પાદન ઉમેરો",
+    "productName": "ઉત્પાદનનું નામ",
+    "productDescription": "ઉત્પાદન વર્ણન",
+    "price": "કિંમત (₹)",
+    "stock": "સ્ટોક",
+    "harvestLocation": "ફસલનું સ્થાન",
+    "harvestDate": "ફસલની તારીખ",
+    "tags": "ટૅગ્સ (અલ્પવિરામથી અલગ)",
+    "imageLink": "છબી લિંક",
+    "submit": "સબમિટ કરો",
+
+    "profile": {
+        "heroTitle": "ખેડૂત પ્રોફાઇલ",
+        "proBadge": "પ્રો ખેડૂત",
+        "farmSize": "કુલ ખેતરનું કદ",
+        "activeFarms": "સક્રિય ખેતરો",
+        "primaryCrops": "મુખ્ય પાક",
+        "contactDetails": "સંપર્ક વિગતો",
+        "phone": "ફોન",
+        "email": "ઇમેઇલ",
+        "address": "સરનામું",
+        "farmDetails": "ખેતર વિગતો",
+        "farmLocation": "ખેતર સ્થાન",
+        "cultivation": "ખેતી",
+        "region": "પ્રદેશ",
+        "farmingOverview": "ખેતી અવલોકન",
+        "totalArea": "કુલ વિસ્તાર",
+        "mainCrop": "મુખ્ય પાક",
+        "membership": "સભ્યપદ",
+        "acres": "એકર"
+      },
+      "analytics": {
+    "dashboardTitle": "ખેડૂત વિશ્લેષણ ડેશબોર્ડ",
+    "timeFrame": {
+      "daily": "દૈનિક",
+      "weekly": "સાપ્તાહિક",
+      "monthly": "માસિક",
+      "yearly": "વાર્ષિક"
+    },
+    "metrics": {
+      "totalEarnings": "કુલ આવક",
+      "pendingPayouts": "બાકી ચૂકવણી",
+      "cropYieldGrowth": "પાક ઉપજ વૃદ્ધિ",
+      "totalOrders": "કુલ ઓર્ડર"
+    },
+    "revenueOverview": "રેવન્યુ અવલોકન",
+    "weatherForecast": "હવામાન પૂર્વાનુમાન",
+    "cropGrowthTrends": "પાક વૃદ્ધિ રુઝાન",
+    "weather": {
+      "temperature": "તાપમાન",
+      "humidity": "ભેજ"
+    }
+  },
+  "dashboard": {
+    "title": "ફાર્મડેટા",
+    "refresh": "તાજું કરો",
+    "loading": "ફાર્મ ડેટા લોડ થાય છે...",
+    "certificationProgress": "પ્રમાણીકરણ પ્રગતિ",
+    "certificationDetails": "પ્રમાણીકરણ વિગતો",
+    "sensorDataTimeline": "સેન્સર ડેટા ટાઇમલાઇન",
+    "lastUpdated": "ડેટા દર 10 સેકન્ડે આપમેળે તાજું થાય છે • છેલ્લું અપડેટ",
+    "status": {
+      "optimal": "ઈષ્ટતમ",
+      "low": "ઓછું",
+      "high": "ઊંચું"
+    },
+    "certification": {
+      "basic": "મૂળભૂત",
+      "intermediate": "મધ્યવર્તી",
+      "fullOrganic": "સંપૂર્ણ ઓર્ગેનિક",
+      "continuePractices": "સંપૂર્ણ પ્રમાણીકરણ પ્રાપ્ત કરવા માટે ટકાઉ પદ્ધતિઓ લાગુ કરવાનું ચાલુ રાખો।",
+      "congratulations": "અભિનંદન! તમે સંપૂર્ણ ઓર્ગેનિક પ્રમાણીકરણ પ્રાપ્ત કર્યું છે."
+    },
+    "aiRecommendations": {
+      "title": "સ્માર્ટ ફાર્મ સહાયક",
+      "allOptimal": "બધી સિસ્ટમ્સ ઈષ્ટતમ છે!",
+      "excellentPerformance": "તમારું ફાર્મ ઉત્તમ પ્રદર્શન કરે છે."
+    },
+    "weekly": "સાપ્તાહિક", 
+    "monthly": "માસિક", 
+    "toggleParameters": "લેજેન્ડમાં તેમના નામ પર ક્લિક કરીને પેરામીટર્સની દૃશ્યમાનતા ટોગલ કરો", 
+    "min": "ન્યૂનતમ", 
+    "max": "મહત્તમ",
+    "optimalRange": "ઈષ્ટતમ શ્રેણી" 
+  }
+
+  }
+  
