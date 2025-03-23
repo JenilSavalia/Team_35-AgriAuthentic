@@ -123,6 +123,16 @@ const limitedProducts = [
 ]
 const LimitedKisan = [
     {
+        "id": 0,
+        "name": "Samir Dombe",
+        "totalArea": "10 acres",
+        "areaUnderCultivation": "10 acres",
+        "cropCycle": "Anjeer (Figs), Palak",
+        "agricultureMethod": "Modern and traditional methods",
+        "description": "Samir Dombe is the proud owner of 'Pavitarak Farmer Producer Company.' He is a second-generation farm owner with a B.E. degree in Medical. He focuses on cultivating figs and palak, using modern and traditional methods. Samir uses technologies like tractors, HTP pumps, and brush cutters to enhance productivity. He prioritizes organic seeds and fine irrigation methods, promoting sustainable farming practices and minimizing the farm's ecological footprint.",
+        "dummyImageLink": "https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/KisanCommunityImage/20230602115352Farmer%20Image.jpg?tr=f-webp"
+    },
+    {
         "id": 1,
         "name": "Wale Kiran Arjun",
         "totalArea": "5 acres",
@@ -154,6 +164,16 @@ const LimitedKisan = [
     },
     {
         "id": 4,
+        "name": "Abhijeet Shankar Tajne",
+        "totalArea": "Dummy Value",
+        "areaUnderCultivation": "Dummy Value",
+        "cropCycle": "Dummy Value",
+        "agricultureMethod": "Dummy Value",
+        "description": "Abhijeet Shankar Tajne is a farmer from Pune, Junnar. Over the years, his land has undergone changes due to proper care and cultivation, significantly improving productivity and quality. He spends the off-season performing maintenance tasks and planning for upcoming seasons. Abhijeet values the expertise of agricultural advisors and seeks their guidance to improve his farming practices. Farming is a way of life for him, bringing immense joy and satisfaction as he contributes to the agricultural sector and ensures a sustainable future for farming.",
+        "dummyImageLink": "https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/KisanCommunityImage/20240826173015mmmm.jpg?tr=f-webp"
+    },
+    {
+        "id": 5,
         "name": "Suraj Kailas Mulay",
         "totalArea": "1 acre",
         "areaUnderCultivation": "1 acre",
@@ -162,26 +182,7 @@ const LimitedKisan = [
         "description": "Suraj Kailas Mulay is a 26-year-old farmer who started farming four years ago. He focuses on corn and has adopted modern irrigation methods like drip irrigation to conserve water and improve crop health. He uses organic dung and natural fertilizers to maintain soil fertility.",
         "dummyImageLink": "https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/KisanCommunityImage/20230531140505Farmer%20Image.jpg?tr=f-webp"
     },
-    {
-        "id": 5,
-        "name": "Samir Dombe",
-        "totalArea": "10 acres",
-        "areaUnderCultivation": "10 acres",
-        "cropCycle": "Anjeer (Figs), Palak",
-        "agricultureMethod": "Modern and traditional methods",
-        "description": "Samir Dombe is the proud owner of 'Pavitarak Farmer Producer Company.' He is a second-generation farm owner with a B.E. degree in Medical. He focuses on cultivating figs and palak, using modern and traditional methods. Samir uses technologies like tractors, HTP pumps, and brush cutters to enhance productivity. He prioritizes organic seeds and fine irrigation methods, promoting sustainable farming practices and minimizing the farm's ecological footprint.",
-        "dummyImageLink": "https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/KisanCommunityImage/20230602115352Farmer%20Image.jpg?tr=f-webp"
-    },
-    {
-        "id": 6,
-        "name": "Abhijeet Shankar Tajne",
-        "totalArea": "Dummy Value",
-        "areaUnderCultivation": "Dummy Value",
-        "cropCycle": "Dummy Value",
-        "agricultureMethod": "Dummy Value",
-        "description": "Abhijeet Shankar Tajne is a farmer from Pune, Junnar. Over the years, his land has undergone changes due to proper care and cultivation, significantly improving productivity and quality. He spends the off-season performing maintenance tasks and planning for upcoming seasons. Abhijeet values the expertise of agricultural advisors and seeks their guidance to improve his farming practices. Farming is a way of life for him, bringing immense joy and satisfaction as he contributes to the agricultural sector and ensures a sustainable future for farming.",
-        "dummyImageLink": "https://ik.imagekit.io/44y3v51cp/kisankonnect/Images/KisanCommunityImage/20240826173015mmmm.jpg?tr=f-webp"
-    }
+
 ]
 
 const KisanDetail = () => {

@@ -59,7 +59,7 @@ const VerificationHome = () => {
         {activeTab === "certification" && <Certification />}
       </div>
       <button
-        onClick={() => navigate("/shop/verify/details")}
+        onClick={() => navigate("/shop/verify")}
         className="mt-6 bg-white text-green-700 font-semibold px-6 py-3 rounded-lg shadow-md border border-green-500 hover:bg-green-100 transition mb-6"
       >
         Verify Another Product

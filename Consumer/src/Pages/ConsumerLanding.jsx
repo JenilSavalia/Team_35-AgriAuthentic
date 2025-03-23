@@ -152,12 +152,12 @@ const ConsumerLanding = () => {
     ]
 
     const FarmerDetail = [
-        { id: 1, photo: farmerDetail1 },
-        { id: 2, photo: farmerDetail2 },
-        { id: 3, photo: farmerDetail3 },
-        { id: 4, photo: farmerDetail4 },
-        { id: 5, photo: farmerDetail5 },
-        { id: 6, photo: farmerDetail6 }
+        { id: 0, photo: farmerDetail1 },
+        { id: 1, photo: farmerDetail2 },
+        { id: 2, photo: farmerDetail3 },
+        { id: 3, photo: farmerDetail4 },
+        { id: 4, photo: farmerDetail5 },
+        { id: 5, photo: farmerDetail6 }
     ];
 
 

@@ -13,6 +13,7 @@ import Cart from "./Pages/Cart/Cart";
 import CheckoutSuccess from "./Pages/CheckoutSuccess";
 import VerificationHome from "./components/Verification/VerificationHome";
 import SearchBar from "./Pages/Header/SearchBar";
+import FarmerLanding from "./Pages/FarmerLanding";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
           <Route path="/shop/verify" element={<ProductVerification />} />
           <Route path="/shop/kisan" element={<KisanConnect />} />
 
-          <Route path="/shop/kisan/detail" element={<KisanDetail />} />
+          {/* <Route path="/shop/kisan/detail" element={<KisanDetail />} /> */}
           <Route path="/shop/kisan/detail/:kisanID" element={<KisanDetail />} />
 
           <Route path="/shop/cart" element={<Cart />} />
@@ -45,8 +46,10 @@ function App() {
           <Route path="/shop/verify/details" element={<VerificationHome />} />
 
 
-
           <Route path="/s" element={<SearchBar />} />
+
+
+          <Route path="/farmer" element={<FarmerLanding />} />
 
 
 

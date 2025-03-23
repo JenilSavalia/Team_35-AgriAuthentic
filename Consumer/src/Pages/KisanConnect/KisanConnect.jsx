@@ -9,14 +9,15 @@ import farmerDetail6 from '../../assets/farmerDetail6.jpg'
 import { Link } from "react-router-dom";
 import NavbarMarket from '../Header/NavbarMarket';
 
-const FarmerDetail = [
-    { id: 1, photo: farmerDetail1 },
-    { id: 2, photo: farmerDetail2 },
-    { id: 3, photo: farmerDetail3 },
-    { id: 4, photo: farmerDetail4 },
-    { id: 5, photo: farmerDetail5 },
-    { id: 6, photo: farmerDetail6 }
-];
+    const FarmerDetail = [
+        { id: 0, photo: farmerDetail1 },
+        { id: 1, photo: farmerDetail2 },
+        { id: 2, photo: farmerDetail3 },
+        { id: 3, photo: farmerDetail4 },
+        { id: 4, photo: farmerDetail5 },
+        { id: 5, photo: farmerDetail6 }
+    ];
+
 
 const KisanConnect = () => {
     return (
