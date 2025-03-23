@@ -1,6 +1,6 @@
 # AgriAuthentic: Bridging Natural Farmers and Conscious Consumers
 
-**[📂 Project Drive Link](https://drive.google.com/drive/folders/1KA2XodtXVoHEw8GkiowqdTl8umDg8GMo?usp=sharing) - Access all project-related files and documentation.**
+**[📂 Project Video Drive Link](https://drive.google.com/drive/folders/1KA2XodtXVoHEw8GkiowqdTl8umDg8GMo?usp=sharing) - Access all project-related files and documentation.**
 
 ## Problem Statement
 The agricultural sector faces significant challenges, particularly for organic farmers who are often forced to sell their produce through middlemen. These intermediaries capture up to 70% of the product’s value, leaving farmers with inadequate returns. Additionally, consumers struggle to trust organic claims due to greenwashing and a lack of transparency in the supply chain. This results in:
