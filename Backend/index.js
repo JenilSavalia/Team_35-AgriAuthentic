@@ -45,20 +45,19 @@ connectDB();
 
 app.post('/webhook/consumer', express.raw({ type: 'application/json' }), async (req, res) => {
   try {
-    // Convert the raw buffer to a string
+ 
     const rawPayload = req.body.toString('utf8');
     console.log('Raw payload:', rawPayload);
 
-    // Parse the payload as JSON
+ 
     const payload = JSON.parse(rawPayload);
     console.log('Parsed payload:', payload);
 
     const headers = req.headers;
     console.log('Headers:', headers);
 
-    // Verify the payload
     const wh = new Webhook(process.env.CLERK_WEBHOOK_SECRET);
-    const evt = wh.verify(rawPayload, headers); // Use the raw payload string for verification
+    const evt = wh.verify(rawPayload, headers); 
 
     switch (evt.type) {
       case 'user.created':
@@ -97,7 +96,7 @@ app.post('/webhook/consumer', express.raw({ type: 'application/json' }), async (
 
 app.use(express.json())
 
-// Add Router here
+
 
 app.use('/api/news', newsRoutes);
 app.use('/api/market', marketRoutes);
@@ -108,7 +107,7 @@ app.use("/basket", basketRouter)
 app.use('/farmer', farmerRouter);
 app.use('/verify', verifyRouter);
 
-// ✅ Schedule auto-updates (every 6 hours)
+
 cron.schedule("0 */6 * * *", async () => {
     console.log("🔄 Fetching and updating market price data...");
     await updateMarketPrices();

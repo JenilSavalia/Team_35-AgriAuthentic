@@ -3,9 +3,6 @@ import {
   getBasket,
   addToBasket,
   deleteFromBasket
-  // updateBasketItem,
-  // removeFromBasket,
-  // clearBasket
 } from '../Controllers/BasketController.js';
 
 const router = express.Router();

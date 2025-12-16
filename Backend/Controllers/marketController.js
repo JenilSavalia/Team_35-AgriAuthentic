@@ -2,7 +2,7 @@ import MarketPrice from "../models/marketSchema.js";
 import fs from "fs";
 import path from "path";
 
-// ✅ Get Highest Prices per Crop
+
 export const getHighestPrices = async (req, res) => {
     try {
         const highestPrices = await MarketPrice.aggregate([
@@ -26,7 +26,7 @@ export const getHighestPrices = async (req, res) => {
     }
 };
 
-// ✅ Predict Best Selling Time
+
 export const predictBestSellingTime = async (req, res) => {
     try {
         const pastDays = 7;
@@ -59,7 +59,6 @@ export const predictBestSellingTime = async (req, res) => {
 };
 
 
-// ✅ Auto-update Market Prices from a CSV file (Simulated Data)
 export const updateMarketPrices = async () => {
     try {
         const filePath = path.join(process.cwd(), "data.csv"); // Replace with your actual CSV file path
