@@ -1,95 +1,430 @@
-# AgriAuthentic: Bridging Natural Farmers and Conscious Consumers
+# 🌾 AgriAuthentic
 
-**[📂 Project Video Drive Link](https://drive.google.com/drive/folders/1KA2XodtXVoHEw8GkiowqdTl8umDg8GMo?usp=sharing) - Access all project-related files and documentation.**
+**Empowering Trust in Agriculture Through Blockchain-Verified Transparency**
 
-## Problem Statement
-The agricultural sector faces significant challenges, particularly for organic farmers who are often forced to sell their produce through middlemen. These intermediaries capture up to 70% of the product’s value, leaving farmers with inadequate returns. Additionally, consumers struggle to trust organic claims due to greenwashing and a lack of transparency in the supply chain. This results in:
+## 📋 Table of Contents
 
-- **Low Consumer Awareness:** Limited knowledge about natural farming reduces demand for organic products.
-- **Inadequate Supply Chains:** Poor infrastructure hampers the efficient distribution of natural products.
-- **Lack of Reliable Markets:** Farmers face difficulties accessing markets, leading to unstable incomes.
-- **Health and Environmental Concerns:** Consumers prioritize health and sustainability, but the lack of verified organic products makes it difficult to meet this demand.
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Solution](#solution)
+- [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Installation & Setup](#installation--setup)
+- [How It Works](#how-it-works)
+- [Team Members](#team-members)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Our Solution: AgriAuthentic
-AgriAuthentic is an AI-driven trust ecosystem that creates a direct marketplace between organic farmers and conscious consumers. By eliminating middlemen, we ensure fair compensation for farmers and provide consumers with verified, authentic organic products. Our solution leverages IoT sensors and LoRa (Long Range) technology to create a smart farming ecosystem that addresses key challenges in agriculture, such as soil health monitoring, crop quality assurance, and farmer verification.
+---
 
-## Key Features
-### Transparent Trust Marketplace
-- Direct farmer-to-consumer interactions eliminate intermediaries.
-- Features like AR-based farm visits and predictive pricing models dynamically reward verified sustainable practices.
+## 🌟 Overview
 
-### Multi-Layered Verification System
-- A progressive secured system that blends expert assessments, community validation, and AI/ML-driven verification to produce an immutable “trust score” and digital certificates.
+**AgriAuthentic** is a comprehensive agricultural transparency platform that bridges the gap between farmers and consumers. By leveraging QR code technology and real-time verification systems, we enable consumers to trace their produce back to its authentic source, ensuring trust, quality, and sustainability in the agricultural supply chain.
 
-### IoT-Enhanced Traceability
-- Leveraging QR/NFC systems and real-time sensor data, the platform provides end-to-end traceability, reinforcing consumer confidence in product authenticity and environmental impact claims.
+Our platform provides farmers with tools to showcase their authentic farming practices while giving consumers complete visibility into product lifecycle, farmer credentials, and sustainable farming methods.
 
-## How It Works
-### IoT Sensor Deployment
-- Deploy IoT sensors across the farm to monitor critical parameters like soil moisture, temperature, pH levels, and electrical conductivity (EC).
-- Use LoRa technology for long-range, low-power data transmission, ensuring reliable data collection even in remote areas.
+---
 
-### Cloud and AI Analytics
-- Sensor data is sent to the cloud for processing.
-- AI algorithms analyze soil health, predict crop performance, and ensure compliance with natural farming standards.
+## 🎯 Problem Statement
 
-### Farmer Verification and Certification
-- A three-level verification process ensures that farmers meet natural farming criteria.
-- Farmers receive a certification badge and gain access to premium markets, increasing their income and market reach.
+In today's agricultural marketplace, consumers face several critical challenges:
 
-### Lab Testing for Additional Verification
-- Optional lab tests provide scientific validation of natural farming practices, further enhancing consumer trust.
+- **Lack of Transparency**: No visibility into product origin and farming practices
+- **Trust Issues**: Difficulty verifying if farmers follow sustainable/organic methods
+- **Information Gap**: Limited access to farmer credentials and product lifecycle data
+- **Counterfeit Products**: Risk of purchasing non-authentic agricultural products
+- **Complex Supply Chain**: Multiple intermediaries obscure the farm-to-consumer journey
 
-## Impact
+---
+
+## 💡 Solution
+
+AgriAuthentic addresses these challenges through a multi-dashboard platform:
+
 ### For Farmers
-- Improved crop yields and reduced costs through data-driven farming.
-- Access to premium markets and higher profits through certification.
+- **Digital Profile Management**: Showcase farming credentials and certifications
+- **Product Lifecycle Tracking**: Document each stage from seed to harvest
+- **QR Code Generation**: Create unique identifiers for each product batch
+- **Dashboard Analytics**: Monitor product distribution and consumer engagement
 
 ### For Consumers
-- Assurance of high-quality, naturally farmed products.
+- **QR Code Scanning**: Instant access to product and farmer information
+- **Verification Dashboard**: View complete product lifecycle and authenticity
+- **Farmer Profile Access**: See credentials, farming methods, and certifications
+- **AI-Powered Assistance**: Get instant answers about products and farming practices
 
-### For the Environment
-- Promotes sustainable farming practices, reducing environmental degradation.
+### For Verification
+- **Certification Dashboard**: Validate farmer credentials and product authenticity
+- **Real-time Data**: Access comprehensive farming and product data
+- **Transparency Reports**: Generate detailed verification reports
 
-## Tech Stack
-Our solution leverages a combination of hardware, software, and cloud technologies to create a scalable, cost-effective, and user-friendly smart farming ecosystem.
+---
 
-### Hardware
-- **IoT Sensors:** Soil moisture, temperature, pH, EC, NPK, and more.
-- **LoRa Nodes & Gateway:** For long-range, low-power data transmission.
+## ✨ Key Features
 
-### Software
-- **AI Models:** TensorFlow, PyTorch for soil and crop verification.
-- **Cloud Platforms:** AWS, Google Cloud, Azure for scalable data storage and processing.
-- **Frontend:** React.js for a dynamic and user-friendly interface.
-- **Backend:** Python (Django, FastAPI) for scalable API handling.
+### 🔍 QR-Based Product Verification
+- Scan QR codes pre or post-purchase
+- Instant access to complete product information
+- View full product lifecycle from planting to harvest
+- Verify farmer authenticity and credentials
 
-### Blockchain & Security
-- **IPFS/Blockchain:** For immutable verification records and secure data storage.
+### 👨‍🌾 Farmer Dashboard
+- Comprehensive profile management
+- Product registration and tracking
+- Batch-wise QR code generation
+- Integration with backend APIs for real-time updates
+- Analytics and insights
 
-## Uniqueness
-- **IoT-Powered Smart Farms:** Real-time data collection ensures a data-driven verification system instead of manual trust-based claims.
-- **AI-Powered Certification:** Custom AI models analyze farm data and provide verified natural farming certificates in 3 Levels.
-- **Lab Testing Integration:** Optional lab tests provide additional verification, enhancing consumer trust.
-- **Full Transparency:** End-to-end traceability through QR/NFC systems and real-time sensor data.
+### 🛒 Consumer Dashboard
+- User-friendly interface for product scanning
+- Detailed product history and origin information
+- Farmer credential verification
+- Purchase history and saved products
+- Educational content about sustainable farming
 
-## Use Cases
-### Farmer Selling Verified Natural Products
-- Farmers gain access to premium markets and earn higher prices through AI-powered certification.
+### 🤖 AI-Powered Chatbot
+- 24/7 customer support
+- Answer queries about products, farmers, and farming practices
+- Provide recommendations based on preferences
+- Multi-language support
 
-### Organic Marketplaces & E-Commerce Platforms
-- Platforms like BigBasket and Amazon can verify the authenticity of organic products, eliminating fake labels and fraud.
+### ✅ Certification Dashboard
+- Verify farmer credentials and certifications
+- Access comprehensive farmer profiles
+- View real-time farming data
+- Generate authenticity certificates
+- Track sustainable farming practices
 
-### Government & Policy Integration
-- Governments can enforce organic farming standards, track farms in real-time, and provide subsidies only to verified farmers.
+---
 
-## Conclusion
-AgriAuthentic is a revolutionary solution that bridges the gap between natural farmers and conscious consumers. By leveraging IoT, AI, and blockchain technology, we create a transparent, trustworthy, and sustainable ecosystem that benefits farmers, consumers, and the environment alike.
+## 🛠️ Technology Stack
 
-For more details, check out our project documentation or visit our GitHub repository.
+### Frontend
+- **React.js** - Component-based UI development
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **JavaScript/TypeScript** - Core programming languages
 
-## Team AgriAuthentic
-- Jatan Mathasoliya
-- Krutagya Kaneria
-- Jenil Savalia
-- Homasvi Kaneria
+### Backend
+- **Python** - Primary backend language
+- **Flask/FastAPI** - RESTful API framework
+- **Database Integration** - Complete CRUD operations
+- **API Architecture** - Scalable and secure endpoints
+
+### Additional Technologies
+- **QR Code Generation & Scanning**
+- **AI/ML Models** - Chatbot integration
+- **Database** - (MongoDB/PostgreSQL/MySQL)
+- **Cloud Storage** - Product images and documents
+
+---
+
+## 📁 Project Structure
+
+```
+Team_35-AgriAuthentic/
+│
+├── Farmer Dashboard/          # Farmer-facing dashboard
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── Consumer/                  # Consumer-facing application
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── Verification/vite-project/ # Certification & verification dashboard
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── Backend/                   # Python backend APIs
+│   ├── api/
+│   ├── models/
+│   ├── controllers/
+│   ├── database/
+│   └── requirements.txt
+│
+├── AiChatBot/                # AI chatbot implementation
+│   ├── model/
+│   ├── training/
+│   └── integration/
+│
+├── Designs/                  # UI/UX design files
+│   └── mockups/
+│
+└── README.md
+```
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- Python (v3.8 or higher)
+- npm or yarn
+- pip (Python package manager)
+
+### Backend Setup
+
+```bash
+# Navigate to backend directory
+cd Backend
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Run database migrations
+python manage.py migrate
+
+# Start the backend server
+python app.py
+```
+
+### Farmer Dashboard Setup
+
+```bash
+# Navigate to Farmer Dashboard
+cd "Farmer Dashboard"
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Add backend API URL
+
+# Start development server
+npm run dev
+```
+
+### Consumer Dashboard Setup
+
+```bash
+# Navigate to Consumer directory
+cd Consumer
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Start development server
+npm run dev
+```
+
+### Verification Dashboard Setup
+
+```bash
+# Navigate to Verification directory
+cd Verification/vite-project
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+
+# Start development server
+npm run dev
+```
+
+### AI Chatbot Setup
+
+```bash
+# Navigate to AiChatBot directory
+cd AiChatBot
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Configure chatbot settings
+# Edit config.py with your AI model credentials
+
+# Run chatbot service
+python chatbot.py
+```
+
+---
+
+## 🔄 How It Works
+
+### For Farmers
+
+1. **Registration**: Create an account with farming credentials
+2. **Profile Setup**: Add certifications, farming methods, and location
+3. **Product Registration**: Register products with details and lifecycle information
+4. **QR Generation**: Generate unique QR codes for product batches
+5. **Distribution**: Attach QR codes to products for consumer scanning
+
+### For Consumers
+
+1. **Scan QR Code**: Use mobile device to scan product QR code
+2. **View Details**: Access complete product information instantly
+3. **Verify Authenticity**: Check farmer credentials and farming practices
+4. **Product Lifecycle**: View journey from seed to shelf
+5. **Make Informed Decision**: Purchase with confidence and transparency
+
+### For Verifiers
+
+1. **Access Dashboard**: Log into certification dashboard
+2. **Scan/Enter Code**: Input product QR code or farmer ID
+3. **Review Data**: Access comprehensive farming and product data
+4. **Verify Credentials**: Confirm certifications and practices
+5. **Generate Report**: Create verification certificates
+
+---
+
+## 👥 Team Members
+
+### 🏆 Team 35 - AgriAuthentic
+
+| Name | Role | Responsibilities |
+|------|------|-----------------|
+| **Jatan Mathasoliya** | Team Leader & Frontend Developer | • Lead project development and coordination<br>• Farmer Dashboard development<br>• Backend integration with Python APIs<br>• Frontend-Backend connectivity<br>• Technical guidance and architecture decisions |
+| **Jenil Savaliya** | Frontend Developer | • Consumer Dashboard development<br>• UI/UX implementation<br>• Backend integration support<br>• Component development and optimization |
+| **Krutagya Kaneria** | Backend Developer | • Complete backend architecture<br>• API development and integration<br>• Database design and management<br>• CRUD operations implementation<br>• Backend optimization and security |
+| **Homasvi Kaneria** | AI Developer & Frontend Developer | • AI Chatbot integration and training<br>• Certification Dashboard development<br>• Natural language processing implementation<br>• Chatbot-backend connectivity |
+
+---
+
+## 🎨 Design Philosophy
+
+Our design focuses on:
+
+- **Simplicity**: Easy-to-use interfaces for farmers with varying technical skills
+- **Transparency**: Clear visualization of product lifecycle and farmer data
+- **Trust**: Professional design that builds confidence in the platform
+- **Accessibility**: Mobile-responsive design for scanning QR codes on-the-go
+- **Performance**: Fast loading times and smooth interactions
+
+---
+
+## 🔐 Security & Privacy
+
+- **Data Encryption**: All sensitive data encrypted in transit and at rest
+- **Authentication**: Secure login systems for all user types
+- **Privacy Controls**: Farmers control what information is shared publicly
+- **QR Code Security**: Unique, tamper-proof QR codes for each product batch
+- **Regular Audits**: Continuous security monitoring and updates
+
+---
+
+## 🌱 Future Enhancements
+
+- [ ] Blockchain integration for immutable record-keeping
+- [ ] IoT sensor integration for real-time farming data
+- [ ] Multi-language support for broader accessibility
+- [ ] Mobile applications for iOS and Android
+- [ ] Advanced analytics dashboard for farmers
+- [ ] Community marketplace integration
+- [ ] Sustainability scoring system
+- [ ] Integration with government agricultural databases
+
+---
+
+## 📊 API Documentation
+
+### Base URL
+```
+http://localhost:5000/api/v1
+```
+
+### Key Endpoints
+
+#### Farmer APIs
+```
+POST   /farmers/register       - Register new farmer
+GET    /farmers/:id            - Get farmer profile
+PUT    /farmers/:id            - Update farmer profile
+POST   /farmers/products       - Add new product
+GET    /farmers/products/:id   - Get product details
+```
+
+#### Consumer APIs
+```
+GET    /products/verify/:qr    - Verify product by QR code
+GET    /products/:id           - Get product details
+GET    /farmers/public/:id     - Get public farmer profile
+```
+
+#### Verification APIs
+```
+POST   /verify/farmer          - Verify farmer credentials
+POST   /verify/product         - Verify product authenticity
+GET    /certificates/:id       - Get certificate details
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions to AgriAuthentic! Here's how you can help:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Development Guidelines
+
+- Follow existing code style and conventions
+- Write clear commit messages
+- Add comments for complex logic
+- Test thoroughly before submitting PR
+- Update documentation as needed
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📞 Contact & Support
+
+For questions, suggestions, or support:
+
+- **Team Leader**: Jatan Mathasoliya
+- **Repository**: [GitHub](https://github.com/Jatan-Mathasoliya/Team_35-AgriAuthentic)
+- **Issues**: [Report Issues](https://github.com/Jatan-Mathasoliya/Team_35-AgriAuthentic/issues)
+
+---
+
+## 🙏 Acknowledgments
+
+- Thanks to all team members for their dedication and hard work
+- Appreciation for the hackathon organizers
+- Gratitude to the farming community for their valuable feedback
+- Thanks to open-source libraries and frameworks that made this possible
+
+---
+
+<div align="center">
+
+**Built with ❤️ by Team 35**
+
+*Jay HariKrushna Maharaj* 🙏
+
+[⭐ Star this repo](https://github.com/Jatan-Mathasoliya/Team_35-AgriAuthentic) | [🐛 Report Bug](https://github.com/Jatan-Mathasoliya/Team_35-AgriAuthentic/issues) | [✨ Request Feature](https://github.com/Jatan-Mathasoliya/Team_35-AgriAuthentic/issues)
+
+</div>
