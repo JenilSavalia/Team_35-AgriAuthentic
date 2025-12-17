@@ -10,16 +10,16 @@
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Solution](#solution)
-- [Key Features](#key-features)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Installation & Setup](#installation--setup)
-- [How It Works](#how-it-works)
-- [Team Members](#team-members)
-- [Contributing](#contributing)
+- [Overview](#-overview)
+- [Problem Statement](#-problem-statement)
+- [Solution](#-solution)
+- [Key Features](#-key-features)
+- [Technology Stack](#-technology-stack)
+- [Project Structure](#-project-structure)
+- [Installation & Setup](#-installation--setup)
+- [How It Works](#-how-it-works)
+- [Team Members](#-team-members)
+- [Contributing](#-contributing)
 
 ---
 
