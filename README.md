@@ -6,7 +6,7 @@
 
 ### Backend postman Documentation :- https://documenter.getpostman.com/view/39189972/2sAYkDN1PN
 
-## **Empowering Trust in Agriculture Through Blockchain-Verified Transparency**
+## **Empowering Trust in Agriculture Through IOT-Verified Transparency**
 
 ## Table of Contents
 
